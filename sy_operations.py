@@ -23,3 +23,7 @@ f= os.open(f_name,os.O_RDWR | os.O_CREAT)
 print(f)
 f_obj= os.fdopen(f, "a+")
 print(f_obj)
+f_obj.close()
+
+print()
+print(os.getpid())
